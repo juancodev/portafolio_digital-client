@@ -13,7 +13,7 @@ const fixtures = {
       liked: false,
       userId: uuid.uuid(),
       publicId: uuid.encode(id),
-      id,
+      id: id,
       createdAt: new Date().toString()
     }
   },
@@ -29,9 +29,8 @@ const fixtures = {
 
   getUser () {
     return {
-      id: uuid.uuid(),
       name: 'JUANCMS',
-      username: 'jmontilla',
+      username: `jmontilla_${uuid.v4()}`,
       createdAt: new Date().toString()
     }
   }

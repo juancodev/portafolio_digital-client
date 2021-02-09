@@ -1,9 +1,9 @@
 'use strict'
 
 const test = require('ava')
+const nock = require('nock')
 const portafolio = require('../index')
 const fixtures = require('./fixtures')
-const nock = require('nock')
 
 const options = {
   endpoints: {
